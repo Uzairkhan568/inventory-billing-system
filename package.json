@@ -1,0 +1,14 @@
+{
+  "name": "smartinventory-billing-system",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "npm --prefix backend run dev",
+    "backend:start": "npm --prefix backend start",
+    "backend:seed": "npm --prefix backend run seed",
+    "frontend:dev": "npm --prefix frontend dev",
+    "frontend:build": "npm --prefix frontend build",
+    "check": "npm --prefix backend check && npm --prefix frontend build"
+  }
+}

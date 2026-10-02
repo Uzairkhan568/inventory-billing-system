@@ -1,0 +1,23 @@
+{
+  "name": "inventory-billing-backend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MERN inventory and billing API",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "check": "node --check server.js && node --check config/db.js && node --check middleware/authMiddleware.js && node --check models/User.js && node --check models/Item.js && node --check models/Sale.js && node --check routes/authRoutes.js && node --check routes/inventoryRoutes.js && node --check routes/salesRoutes.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.2"
+  
+  }
+}
